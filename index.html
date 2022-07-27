@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Phonie App</title>
+    <link rel="icon" type="image/x-icon" href="resources/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <section class="container">
+        <section class="description">
+            <p class="text">
+                Identify the telecom carrier of your telephone with just a
+                <i class="click">click! </i>
+            </p>
+            <img src="resources/business.png" alt="Description Image">
+        </section>
+        <section class="formItem" id="formItem">
+            <p class="form-text">Welcome to Phonie App!</p>
+            <section class="form">
+                <form>
+                    <div class="formItems">
+                        <label for="Username">Type in Your Full Name</label>
+                        <input type="text" name="fullname" id="fullname" required>
+                    </div>
+                    <div class="formItems">
+                        <label for="email">Type in Your E-mail Address</label>
+                        <input type="email" name="email" id="email" required validate="true">
+                    </div>
+                    <div class="formItems network-Provider">
+                        <label for="Username">Type in Your Phone Number</label>
+                        <div class="select">
+                            <select name="network" id="" class="network">
+                                <option value=" +234">+234</option>
+                            </select>
+                            <input type="number" name="phone" class="phone" id="phone" required maxlength="11" minlength="11">
+                        </div>
+
+                    </div>
+                   
+                    <!-- <p class="networkID" id="networkID"> Your Network Provider is: </p> -->
+                </form>
+                <button id="submitBtn"> Submit</button>
+            </section>
+        </section>
+
+        <!-- Result Output -->
+        <section class="formItem result" id="result">
+            <p class="form-text"> Hello, </p>
+
+            <label for="" id="networkID"> Your Telephone Carrier is </label>
+            <img src="" alt="network carrier" id="myImg"> 
+            <input type="text" id="phoneNumber"disabled>
+            <button type="reset" id="reset"> Reset</button>
+
+        </section>
+
+
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
